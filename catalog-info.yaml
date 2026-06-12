@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ice-dnb-public-sync
+  description: Secure public code replication and export pipeline to automatically clone, sanitize, flatten, and sync codebase snapshots to dnb-public on tag releases
+  annotations:
+    github.com/project-slug: dnb-main/ice-dnb-public-sync
+  tags:
+    - github-actions
+    - sync
+    - mirror
+    - secure-pipeline
+    - automation
+spec:
+  type: service
+  lifecycle: production
+  owner: group:ghe-6758-dnbcloudengineering
